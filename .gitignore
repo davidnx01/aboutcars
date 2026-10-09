@@ -1,0 +1,5 @@
+# do repa ide len web; podklady a generátor ostávajú lokálne
+BRIEF.md
+raw/
+_build/
+.DS_Store
