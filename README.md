@@ -14,11 +14,10 @@ Druhá verzia redizajnu (11. 10. 2026). Prvá verzia mala rovnaké poradie a typ
 - **Dráhy (lane) namiesto sekcií s kartami.** Každá sekcia má úzky ľavý pruh so zvislým označením
   („PREPRAVA“, „VÝKLADKA“, „PROCES“, „KONTAKT“) a vlasovou linkou; obsah beží vedľa na celú šírku.
   Žiadne zaoblenia, žiadne tiene, žiadne karty — len vlasové linky a oranžová značka.
-- **Hero bez fotky:** veľká kondenzovaná typografia vľavo a **dispečerská tabuľa služieb** vpravo —
+- **Hero:** fotka autoprepravníka cez celú plochu pod tmavým závojom, veľká kondenzovaná typografia vľavo a **dispečerská tabuľa služieb** vpravo na polopriehľadnom paneli —
   štyri riadky s kódom trasy (SK · CZ · HU · EÚ, Námorné kontajnery, Bez lakovania, Pred dodaním),
   názvom, popisom a šípkou. Všetky štyri služby sú viditeľné hneď, bez slidera a bez mriežky kariet.
-- **Fotopás cez celú šírku** až pod hero; čísla (10+, 1 000+, 99 %) ležia na jeho spodnom okraji ako
-  odpočet na tabuli, nie ako tri boxy.
+- **Čísla** (10+, 1 000+, 99 %) ležia na spodnom okraji hero fotky ako odpočet na tabuli, nie ako tri boxy.
 - **Proces spolupráce ako trasa:** prerušovaná čiara s kosoštvorcovými kilometrovníkmi 01–04
   (číslovanie je ich vlastné). Na mobile sa trasa otočí do zvislej osi.
 - **Vlastnosti služieb ako vlasová mriežka štítkov** (nie zaškrtávacie políčka).
