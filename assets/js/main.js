@@ -8,6 +8,6 @@
   }
   var send=d.querySelector("[data-demo-send]");
   if(send){send.addEventListener("click",function(){
-    send.parentNode.querySelector(".form__note").textContent="Toto je neoficiálny návrh — správa sa neodosiela. Zavolajte prosím na +421 948 262 951.";
+    d.querySelector(".form__note").textContent="Toto je neoficiálny návrh — správa sa neodosiela. Zavolajte prosím na +421 948 262 951.";
   })}
 })();

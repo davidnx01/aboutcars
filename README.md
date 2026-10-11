@@ -7,14 +7,27 @@ Nový vizuál pre [aboutcars.sk](https://aboutcars.sk). Texty a fotografie sú p
 Statický web bez build kroku, **rovnaké URL ako dnešný web** (presmerovania pri spustení netreba):
 `/` · `/o-nas/` · `/sluzby/` · `/kontakty/` · `/service/preprava-vozidiel/` · `/service/vykladka-namornych-kontajnerov/` · `/service/oprava-pdr/` · `/service/audit-vozidiel/`
 
-## Koncept: preberací protokol vozidla, celý web v tmavom režime
-- **Tmavý režim na celom webe** (na želanie Davida, nadväzuje na ich pôvodnú `#121212`): vrstvy `#08090b` / `#0e1013` / `#121519` / `#16191e`, text `#eceef0`, oranžová z loga ako farba tlače (`#e0763a` na texty, tlačidlá `#c4561b` kvôli kontrastu bieleho písma).
-- **Polia s popiskami** namiesto kariet: hero má tri polia (preprava · výkladka · PDR a audit) položené cez fotku autoprepravníka — všetky tri slajdy pôvodného slidera sú viditeľné naraz.
-- **Kontrolné zoznamy so zaškrtnutím** pre vlastnosti služieb (Zmluvná preprava, Bezpečný transport…).
-- **Logo ako pečiatka** na fotke autoprepravníka a na fotke v O nás.
-- **Jedna ozdoba:** obrys auta zhora s kontrolnými bodmi pri „Oprava PDR a audit vozidiel“.
-- Proces spolupráce 01–04 (číslovanie je ich) ako časová os.
-- Písmo: **Chakra Petch** (z ich témy — kontinuita) + **IBM Plex Sans** (text). Nadpisy vetnou veľkosťou namiesto verzálok.
+## Koncept: dispečerská tabuľa a ložná paluba (tmavý režim)
+Druhá verzia redizajnu (11. 10. 2026). Prvá verzia mala rovnaké poradie a typ sekcií ako pôvodný web
+(hero, mriežka kariet, proces 01–04, formulár) — menila len farby. Táto verzia mení architektúru stránky.
+
+- **Dráhy (lane) namiesto sekcií s kartami.** Každá sekcia má úzky ľavý pruh so zvislým označením
+  („PREPRAVA“, „VÝKLADKA“, „PROCES“, „KONTAKT“) a vlasovou linkou; obsah beží vedľa na celú šírku.
+  Žiadne zaoblenia, žiadne tiene, žiadne karty — len vlasové linky a oranžová značka.
+- **Hero bez fotky:** veľká kondenzovaná typografia vľavo a **dispečerská tabuľa služieb** vpravo —
+  štyri riadky s kódom trasy (SK · CZ · HU · EÚ, Námorné kontajnery, Bez lakovania, Pred dodaním),
+  názvom, popisom a šípkou. Všetky štyri služby sú viditeľné hneď, bez slidera a bez mriežky kariet.
+- **Fotopás cez celú šírku** až pod hero; čísla (10+, 1 000+, 99 %) ležia na jeho spodnom okraji ako
+  odpočet na tabuli, nie ako tri boxy.
+- **Proces spolupráce ako trasa:** prerušovaná čiara s kosoštvorcovými kilometrovníkmi 01–04
+  (číslovanie je ich vlastné). Na mobile sa trasa otočí do zvislej osi.
+- **Vlastnosti služieb ako vlasová mriežka štítkov** (nie zaškrtávacie políčka).
+- **Kontakt ako volací list dispečingu:** mená, čísla, e-mail a hodiny v riadkoch s linkami,
+  formulár s podčiarknutými poľami namiesto rámčekov.
+- **Pätička** s obrovským obrysovým nápisom ABOUTCARS.
+- Písmo: **Antonio** (nadpisy — úzky, vysoký, „nákladný“ rez) + **Public Sans** (text)
+  + **Sometype Mono** (kódy, popisky, číselné údaje). Farby: čierna/grafitová vrstva
+  `#0b0d0f → #1e2328`, oranžová z loga `#e4762f` ako jediná farba značky.
 
 ## Čo nový web rieši oproti pôvodnému
 - Bez slidera a preloaderu — hlavné ponuky sú viditeľné hneď.
