@@ -1,8 +1,6 @@
-# AboutCars s.r.o. — redizajn webu (neoficiálny návrh)
+# AboutCars s.r.o. — redizajn webu
 
-> Neoficiálny návrh — nie je to oficiálny web podniku. Ukážka redizajnu od [webdavid.sk](https://webdavid.sk); formulár tu nefunguje.
-
-Nový vizuál pre [aboutcars.sk](https://aboutcars.sk). Texty a fotografie sú pôvodné z ich webu (stav 9. 10. 2026), zmenený je dizajn, štruktúra a technika.
+Nový vizuál pre [aboutcars.sk](https://aboutcars.sk). Texty a fotografie sú pôvodné z ich webu (stav 9. 10. 2026), zmenený je dizajn, štruktúra a technika. Web: [webdavid.sk](https://webdavid.sk).
 
 Statický web bez build kroku, **rovnaké URL ako dnešný web** (presmerovania pri spustení netreba):
 `/` · `/o-nas/` · `/sluzby/` · `/kontakty/` · `/service/preprava-vozidiel/` · `/service/vykladka-namornych-kontajnerov/` · `/service/oprava-pdr/` · `/service/audit-vozidiel/`
@@ -43,10 +41,14 @@ Druhá verzia redizajnu (11. 10. 2026). Prvá verzia mala rovnaké poradie a typ
 - „Hovory prijímame od 7:30 - 17:00“ → „od 7:30 – 17:00“ (pomlčka).
 - Nadpisy a otázky FAQ vetnou veľkosťou (pôvodne verzálky). Obsah bez zmeny.
 
-## Pred spustením overiť
+## Stav pred spustením (aktualizované)
+- `noindex` odstránený zo všetkých stránok, `robots.txt` povoľuje indexovanie a odkazuje na nový `sitemap.xml`.
+- Oranžový pruh „Neoficiálny návrh“ a text v pätičke odstránené; pätička teraz nesie len „Web: webdavid.sk“.
+- Kontaktný formulár (polia meno/e-mail/telefón/správa) je z webu úplne odstránený. Sekcia „Dohodnime si stretnutie“ obsahuje len kontaktné údaje: telefónne čísla ako `tel:` odkazy a e-mail ako `mailto:` odkaz — nič sa nedá vypĺňať.
+
+## Ešte overiť s klientom
 - **Rozpor v hodinách:** pätička „Kontakt 24/7 NONSTOP“ vs. kontakty „Hovory prijímame od 7:30 – 17:00“ (bez dní). Zjednotiť s klientom; dovtedy web neukazuje živý stav otvorené/zatvorené.
 - Mená kontaktných osôb (P. Pollák, S. Meszárosová) sú prevzaté z ich stránky Kontakty — potvrdiť, že ich chcú ponechať.
-- Formulár je v náhľade vypnutý — pri spustení napojiť (e-mail alebo administrácia).
 
 ## Fotky (`assets/img/`)
 Všetky z aboutcars.sk/wp-content/uploads (WhatsApp fotky z 12.–18. 3. 2026, logo, favicon). Zmenšené a prevedené do WebP. Stock pozadie `page-title-bg.jpg` a ikony z témy (2022) nie sú použité.

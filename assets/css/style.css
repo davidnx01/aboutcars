@@ -51,10 +51,6 @@ button,input,textarea{font:inherit;color:inherit}
 .ulink{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .22s var(--ease)}
 .ulink:hover{background-size:100% 1px}
 
-/* pruh neoficiálneho návrhu */
-.demo{background:var(--or);color:#0b0d0f;font:500 12px/1.4 var(--f-m);letter-spacing:.04em;text-align:center;padding:8px var(--g)}
-.demo b{font-weight:600;letter-spacing:.14em;text-transform:uppercase}
-
 /* ---------- hlavička ---------- */
 .strip{background:#000;border-bottom:1px solid var(--line)}
 .strip__in{display:flex;justify-content:space-between;gap:16px;padding:9px 0;font:500 11.5px/1.4 var(--f-m);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
@@ -166,8 +162,8 @@ button,input,textarea{font:inherit;color:inherit}
 .route h3{font-size:clamp(19px,1.7vw,23px);margin-bottom:10px}
 .route p{font-size:15px;line-height:1.55;color:var(--ink-3)}
 
-/* dispečing + formulár */
-.dispatch{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(32px,5vw,72px);align-items:start}
+/* dispečing */
+.dispatch{max-width:560px}
 .dispatch h2{margin-bottom:18px}
 .dispatch .lead{margin-bottom:28px}
 .calls{border-top:1px solid var(--line)}
@@ -176,15 +172,6 @@ button,input,textarea{font:inherit;color:inherit}
 .calls a,.calls span{font:600 clamp(22px,2.2vw,30px)/1 var(--f-d);letter-spacing:.03em}
 .calls a:hover{color:var(--or)}
 .calls .small{font:400 15px/1.5 var(--f-t);letter-spacing:0;color:var(--ink-2)}
-.form{display:grid;grid-template-columns:1fr 1fr;gap:24px 26px}
-.form .full{grid-column:1/-1}
-.fld{display:grid;gap:9px}
-.fld label{font:500 11px/1 var(--f-m);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3)}
-.fld input,.fld textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--line-2);padding:12px 2px;font-size:16.5px;transition:border-color .2s}
-.fld textarea{min-height:120px;resize:vertical}
-.fld input::placeholder,.fld textarea::placeholder{color:var(--ink-3)}
-.fld input:focus,.fld textarea:focus{outline:none;border-bottom-color:var(--or)}
-.form__note{font-size:14px;color:var(--or);min-height:1.4em}
 
 /* výzva na konci dráhy */
 .callout{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px;padding:clamp(26px,3vw,40px);background:var(--bg-2);box-shadow:inset 0 0 0 1px var(--line)}
@@ -275,7 +262,7 @@ button,input,textarea{font:inherit;color:inherit}
   .hero::before{background:linear-gradient(0deg,var(--bg) 0,rgba(8,10,12,.74) 42%,rgba(8,10,12,.86) 100%)}
   .hero__bg{object-position:52% 42%}
   .hero .board{padding:0 12px 4px}
-  .spot,.duo,.dispatch,.svcbody,.about,.phead__row{grid-template-columns:1fr}
+  .spot,.duo,.svcbody,.about,.phead__row{grid-template-columns:1fr}
   .bleed-r,.bleed-l{margin-inline:calc(-1*var(--g))}
   .spot__media img{aspect-ratio:16/10}
   .route{grid-template-columns:1fr 1fr;row-gap:34px}
@@ -302,7 +289,6 @@ button,input,textarea{font:inherit;color:inherit}
   .route li{padding:0 0 30px;margin-top:0}
   .route li::before{top:6px;left:-27px}
   .route li::after{display:none}
-  .form{grid-template-columns:1fr}
   .duo{gap:28px}
   .foot__in{grid-template-columns:1fr}
   .qa details p{padding-right:0}
