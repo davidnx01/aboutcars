@@ -27,7 +27,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.62 var(--f-t
 img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
 p{margin:0}
-h1,h2,h3,h4{margin:0;font-family:var(--f-d);font-weight:600;line-height:.96;letter-spacing:-.005em;text-transform:uppercase}
+h1,h2,h3,h4{margin:0;font-family:var(--f-d);font-weight:600;line-height:1.06;letter-spacing:-.005em;text-transform:uppercase}
 ul,ol{margin:0;padding:0;list-style:none}
 button,input,textarea{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--or);outline-offset:3px}
@@ -91,7 +91,7 @@ button,input,textarea{font:inherit;color:inherit}
              linear-gradient(180deg,rgba(8,10,12,.9) 0,rgba(8,10,12,.1) 24%)}
 .hero__in{position:relative;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(32px,5vw,72px);align-items:center;padding:clamp(56px,7vw,96px) 0 clamp(40px,5vw,64px)}
 .hero__copy{display:grid;gap:26px;justify-items:start}
-.hero h1{font-size:clamp(48px,7.2vw,108px);line-height:1.02;letter-spacing:-.012em;text-shadow:0 2px 30px rgba(0,0,0,.5)}
+.hero h1{font-size:clamp(48px,7.2vw,108px);line-height:1.12;letter-spacing:-.012em;text-shadow:0 2px 30px rgba(0,0,0,.5)}
 .hero h1 em{font-style:normal;display:block;color:var(--or)}
 .hero .lead{color:rgba(233,235,236,.86)}
 .hero__acts{display:flex;flex-wrap:wrap;gap:10px}
@@ -131,7 +131,7 @@ button,input,textarea{font:inherit;color:inherit}
 .lane__rail span{position:sticky;top:120px;writing-mode:vertical-rl;transform:rotate(180deg);font:500 11.5px/1 var(--f-m);letter-spacing:.3em;text-transform:uppercase;color:var(--ink-3);padding-bottom:6px}
 .lane__rail::after{content:"";position:absolute;top:0;bottom:0;right:clamp(16px,2.4vw,40px);width:1px;background:var(--line)}
 .lane__body{min-width:0;display:grid;gap:clamp(26px,3vw,40px)}
-.lane h2{font-size:clamp(32px,4.2vw,62px);line-height:.98}
+.lane h2{font-size:clamp(32px,4.2vw,62px);line-height:1.08}
 .lane--pad{padding-top:clamp(40px,5vw,72px)}
 
 /* spotlight v dráhe */
@@ -195,7 +195,7 @@ button,input,textarea{font:inherit;color:inherit}
 .phead{padding:clamp(34px,4.4vw,56px) 0 0}
 .crumbs{display:flex;flex-wrap:wrap;gap:10px;font:500 11.5px/1 var(--f-m);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
 .crumbs a:hover{color:var(--ink)}
-.phead h1{margin-top:22px;font-size:clamp(44px,6.6vw,102px);line-height:.95;letter-spacing:-.018em}
+.phead h1{margin-top:22px;font-size:clamp(44px,6.6vw,102px);line-height:1.05;letter-spacing:-.018em}
 .phead__row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:20px 48px;align-items:end;padding-bottom:clamp(30px,4vw,48px)}
 .phead__row .lead{padding-bottom:10px}
 
@@ -227,7 +227,7 @@ button,input,textarea{font:inherit;color:inherit}
 /* FAQ */
 .qa{border-top:1px solid var(--line-2)}
 .qa details{border-bottom:1px solid var(--line)}
-.qa summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;cursor:pointer;font:600 clamp(19px,1.8vw,24px)/1.2 var(--f-d);text-transform:uppercase;letter-spacing:.01em}
+.qa summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;cursor:pointer;font:600 clamp(19px,1.8vw,24px)/1.32 var(--f-d);text-transform:uppercase;letter-spacing:.01em}
 .qa summary::-webkit-details-marker{display:none}
 .qa summary::after{content:"";flex:none;width:30px;height:30px;box-shadow:inset 0 0 0 1px var(--line-2);background:linear-gradient(var(--or),var(--or)) center/11px 2px no-repeat,linear-gradient(var(--or),var(--or)) center/2px 11px no-repeat;transition:background-size .2s,box-shadow .2s}
 .qa details[open] summary::after{background-size:11px 2px,2px 0;box-shadow:inset 0 0 0 1px var(--or)}
